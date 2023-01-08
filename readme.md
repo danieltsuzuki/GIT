@@ -29,7 +29,7 @@ Lista todos os arquivos novos ou modificados para serem commitados
 
 ```git add NOME-ARQUIVO```
 
-Faz o snapshot de um arquivo na preparação para versionamento
+Adiciona um arquivo na preparação para versionamento
 
 ```git reset NOME-ARQUIVO```
 
@@ -46,7 +46,7 @@ versões
 
 ```git commit -m "MENSAGEM"```
 
-Grava o snapshot permanentemente do arquivo no histórico de versão
+Grava as alterações do arquivo no histórico de versão
 <br><br>
 
 # Alteração em grupo
@@ -57,19 +57,19 @@ Lista todos as branchs locais no repositório atual
 
 ```git branch NOME-BRANCH```
 
-Cria um novo branch
+Cria uma nova branch
 
 ```git checkout NOME-BRANCH```
 
-Muda para o branch específico e atualiza o diretório de trabalho
+Muda para a branch especificada e atualiza o diretório de trabalho
 
 ```git merge NOME-BRANCH```
 
-Combina o histórico do branch específico com o branch atual
+Combina o histórico da branch especificada com o branch atual
 
 ```git branch -d NOME-BRANCH```
 
-Exclui o branch específico
+Exclui a branch especificada
 <br><br>
 
 # Refatoração de arquivos
@@ -91,14 +91,21 @@ Muda o nome do arquivo e o seleciona para o commit
 # Histórico
 
 ```git log```
+
 Lista o histórico de versões para o branch atual
+
 ```git log --follow NOME-ARQUIVO```
+
 Lista o histórico de versões para um arquivo, incluindo mudanças de
 nome
+
 ```git diff NOME-BRANCH...NOME-OUTRA-BRANCH```
+
 Mostra a diferença de conteúdo entre dois branches
+
 ```git show HASH-COMMIT```
-Retorna mudanças de metadata e conteúdo para o commit especificado
+
+Mostra mudanças de metadata e conteúdo para o commit especificado
 <br><br>
 
 # Reverter commits
@@ -122,16 +129,16 @@ Reverte o que foi feito no commit especificado, voltando para o commit anterior 
 
 ```git fetch [marcador]```
 
-Baixe todo o histórico de um marcador de repositório
+Atualiza todo o histórico de um marcador de repositório
 
 ```git merge [marcador]/NOME-BRANCH```
 
-Combina o marcador do branch no branch local
+Combina o branch utilizada na branch master
 
-```git push [alias] NOME-BRANCH```
+```git push -u NOME-BRANCH```
 
-Envia todos os commits do branch local para o GitHub
+Envia todos os commits da branch local para o repositório remoto
 
 ```git pull```
 
-Baixa o histórico e incorpora as mudanças
+Atualiza o repositório atual com histórico de commits e arquivos mais rescentes
