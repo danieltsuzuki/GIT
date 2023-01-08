@@ -121,10 +121,17 @@ Reverte o que foi feito no commit especificado, voltando para o commit anterior 
 # Sincronização
 
 ```git fetch [marcador]```
+
 Baixe todo o histórico de um marcador de repositório
+
 ```git merge [marcador]/NOME-BRANCH```
+
 Combina o marcador do branch no branch local
+
 ```git push [alias] NOME-BRANCH```
+
 Envia todos os commits do branch local para o GitHub
+
 ```git pull```
+
 Baixa o histórico e incorpora as mudanças
